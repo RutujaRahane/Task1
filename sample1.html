@@ -1,0 +1,43 @@
+<DOCTYPE html>
+<html>
+<head>
+   <title> simple webpage</title>
+   <style>
+    /*styling for the webpage*/
+	body{
+        font-family:arial;
+        text-align:center;
+        background-color:#f0f8ff;
+    }
+    h1{
+       color:green;
+    }
+    button{
+        padding:10px 20px;
+        background-color:blue;
+        color:white;
+        border:none;
+        border-radius:5px;
+        cursor:pointer;
+    button:hover{
+         background-color:darkblue;
+    }		  
+   </style>
+</head>
+<body>
+   <h1>my simple webpage</h1>
+   <p>hello this is very simple webpage for beginners</p>
+   <p>here is alink of my favuorite website</p>
+   <a href="https:www.google.com" target="_blank">Visit Google</a>
+   <p>click the button below to see a message</p>
+   <button onclick="showmessage()">Click Me</button>
+   
+   <script>
+    //function to show an alert
+	function showmessage(){
+	 alert("yoy clicked the button ! Nice Job");
+	}
+   </script>
+   
+</body>
+</html>
