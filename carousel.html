@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Carousel</title>
+    <style>
+        body { text-align: center; font-family: Arial, sans-serif; }
+        img { width: 300px; height: auto; display: block; margin: auto; }
+        button { margin: 10px; padding: 10px; font-size: 16px; }
+    </style>
+</head>
+<body>
+    <h2>Image Carousel</h2>
+    <img id="carousel" src="image1.jpg">
+    <br>
+    <button onclick="nextImage()">Next</button>
+
+    <script>
+        let images = ["image1.jpg", "image2.jpg", "image3.jpg"];
+        let index = 0;
+
+        function nextImage() {
+            index = (index + 1) % images.length;
+            document.getElementById("carousel").src = images[index];
+        }
+    </script>
+</body>
+</html>
